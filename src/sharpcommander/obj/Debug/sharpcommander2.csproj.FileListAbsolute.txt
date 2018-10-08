@@ -1,0 +1,3 @@
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe.config
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.exe
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.pdb

@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B438D93-D606-44F2-B8BB-7C05E3A95A8E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sharpcommander</RootNamespace>
+    <AssemblyName>sharpcommander</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>icons\black-server.ico</ApplicationIcon>
+    <TargetZone>LocalIntranet</TargetZone>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>C:\Users\Rendszergazda\Desktop\sharpcmd\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://jamela.zxq.net</SupportUrl>
+    <ProductName>Sharp Commander</ProductName>
+    <PublisherName>jamela</PublisherName>
+    <SuiteName>Sharp Commander</SuiteName>
+    <ApplicationRevision>156</ApplicationRevision>
+    <ApplicationVersion>0.2.3.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AreYouSureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreYouSureForm.Designer.cs">
+      <DependentUpon>AreYouSureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuiltInTextEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuiltInTextEditor.Designer.cs">
+      <DependentUpon>BuiltInTextEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileAcces.cs" />
+    <Compile Include="FileHandlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileHandlerForm.Designer.cs">
+      <DependentUpon>FileHandlerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTPAcces.cs" />
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewFolderDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewFolderDialog.Designer.cs">
+      <DependentUpon>NewFolderDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PathVerifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PathVerifyForm.Designer.cs">
+      <DependentUpon>PathVerifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessForm.Designer.cs">
+      <DependentUpon>ProcessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramInfoBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramInfoBox.Designer.cs">
+      <DependentUpon>ProgramInfoBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AreYouSureForm.resx">
+      <DependentUpon>AreYouSureForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuiltInTextEditor.resx">
+      <DependentUpon>BuiltInTextEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileHandlerForm.resx">
+      <DependentUpon>FileHandlerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewFolderDialog.resx">
+      <DependentUpon>NewFolderDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PathVerifyForm.resx">
+      <DependentUpon>PathVerifyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessForm.resx">
+      <DependentUpon>ProcessForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramInfoBox.resx">
+      <DependentUpon>ProgramInfoBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusForm.resx">
+      <DependentUpon>StatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="StatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatusForm.Designer.cs">
+      <DependentUpon>StatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\black-server.ico" />
+    <Content Include="Resources\about.ico" />
+    <Content Include="Resources\add_file.ico" />
+    <Content Include="Resources\add_folder.ico" />
+    <Content Include="Resources\application.ico" />
+    <None Include="Resources\black-server.ico" />
+    <None Include="Resources\black-server-icon.png" />
+    <Content Include="Resources\break.ico" />
+    <Content Include="Resources\check.ico" />
+    <Content Include="Resources\close.ico" />
+    <None Include="Resources\configure.ico" />
+    <Content Include="Resources\connect.ico" />
+    <Content Include="Resources\copy.ico" />
+    <Content Include="Resources\cut.ico" />
+    <Content Include="Resources\delete.ico" />
+    <None Include="Resources\depack.ico" />
+    <Content Include="Resources\disconnect.ico" />
+    <None Include="Resources\documents.ico" />
+    <Content Include="Resources\download.ico" />
+    <None Include="Resources\drive-3-cb-clean-icon.png" />
+    <None Include="Resources\drive-3-br-clean-icon.png" />
+    <None Include="Resources\drive-3-sg-clean.ico" />
+    <None Include="Resources\drive-3-sg-clean-icon.png" />
+    <Content Include="Resources\edit.ico" />
+    <None Include="Resources\edit2.ico" />
+    <Content Include="Resources\email.ico" />
+    <Content Include="Resources\favorites.ico" />
+    <Content Include="Resources\firefox_file.ico" />
+    <Content Include="Resources\folder.ico" />
+    <Content Include="Resources\forward.ico" />
+    <Content Include="Resources\globe.ico" />
+    <Content Include="Resources\help.ico" />
+    <Content Include="Resources\home.ico" />
+    <Content Include="Resources\html_file.ico" />
+    <Content Include="Resources\image_file.ico" />
+    <None Include="Resources\info.ico" />
+    <Content Include="Resources\jscript_file.ico" />
+    <Content Include="Resources\my_documents.ico" />
+    <None Include="Resources\networkdrive.ico" />
+    <None Include="Resources\network.ico" />
+    <Content Include="Resources\new.ico" />
+    <None Include="Resources\off-server.ico" />
+    <None Include="Resources\off-server.png" />
+    <Content Include="Resources\open.ico" />
+    <Content Include="Resources\opened_folder.ico" />
+    <None Include="Resources\pack.ico" />
+    <Content Include="Resources\paste.ico" />
+    <Content Include="Resources\pause.ico" />
+    <Content Include="Resources\play.ico" />
+    <Content Include="Resources\preview.ico" />
+    <None Include="Resources\refresh.ico" />
+    <Content Include="Resources\rewind.ico" />
+    <Content Include="Resources\save.ico" />
+    <Content Include="Resources\search.ico" />
+    <Content Include="Resources\stop.ico" />
+    <Content Include="Resources\style_file.ico" />
+    <Content Include="Resources\synchronize.ico" />
+    <Content Include="Resources\x.ico" />
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

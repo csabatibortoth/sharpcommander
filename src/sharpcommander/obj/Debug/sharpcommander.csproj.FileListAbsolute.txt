@@ -1,0 +1,94 @@
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.pdb
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.Properties.Resources.resources
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.exe
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.pdb
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe.manifest
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.application
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.TrustInfo.xml
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.exe.manifest
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.application
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.NewFolderDialog.resources
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.AreYouSureForm.resources
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.FileHandlerForm.resources
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.TestForm.resources
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.mainForm.resources
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.ProcessForm.resources
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.PathVerifyForm.resources
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\ResGen.read.1.tlog
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\ResGen.write.1.tlog
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.BuiltInTextEditor.resources
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.ProgramInfoBox.resources
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe.config
+C:\Users\Rendszergazda\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.StatusForm.resources
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe.config
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.exe
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.pdb
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.AreYouSureForm.resources
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.BuiltInTextEditor.resources
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.FileHandlerForm.resources
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.mainForm.resources
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.NewFolderDialog.resources
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.PathVerifyForm.resources
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.ProcessForm.resources
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.ProgramInfoBox.resources
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.Properties.Resources.resources
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.StatusForm.resources
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.TestForm.resources
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\ResGen.read.1.tlog
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\ResGen.write.1.tlog
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe.manifest
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.application
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.pdb
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.TrustInfo.xml
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.exe.manifest
+C:\Users\Csabi\Documents\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.application
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe.config
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.exe
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.pdb
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe.manifest
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.application
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.pdb
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.AreYouSureForm.resources
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.BuiltInTextEditor.resources
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.FileHandlerForm.resources
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.mainForm.resources
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.NewFolderDialog.resources
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.PathVerifyForm.resources
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.ProcessForm.resources
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.ProgramInfoBox.resources
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.Properties.Resources.resources
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.StatusForm.resources
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.TestForm.resources
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\ResGen.read.1.tlog
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\ResGen.write.1.tlog
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.TrustInfo.xml
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.exe.manifest
+C:\Users\Csabi\Desktop\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.application
+D:\projektek\Visual Studio 2008\Projects\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe.config
+D:\projektek\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.exe
+D:\projektek\Visual Studio 2008\Projects\sharpcommander\sharpcommander\obj\Debug\sharpcommander.pdb
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe.config
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\bin\Debug\sharpcommander.exe
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\bin\Debug\sharpcommander.pdb
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.csprojAssemblyReference.cache
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.AreYouSureForm.resources
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.BuiltInTextEditor.resources
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.FileHandlerForm.resources
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.mainForm.resources
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.NewFolderDialog.resources
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.PathVerifyForm.resources
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.ProcessForm.resources
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.ProgramInfoBox.resources
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.Properties.Resources.resources
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.StatusForm.resources
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.TestForm.resources
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.csproj.GenerateResource.cache
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.csproj.CoreCompileInputs.cache
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.exe
+C:\Users\csaba\Desktop\sharpcommander\sharpcommander\obj\Debug\sharpcommander.pdb
