@@ -1,4 +1,5 @@
 using System.Text;
+using sharpcommander.Localization;
 
 namespace sharpcommander;
 
@@ -16,6 +17,7 @@ internal static class Program
 
         // Visual styles, text rendering, DPI mode and default font come from the project file.
         ApplicationConfiguration.Initialize();
+        Localizer.Initialize();
         Application.Run(new mainForm());
     }
 }

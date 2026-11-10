@@ -1,5 +1,7 @@
 using System.ComponentModel;
 
+using sharpcommander.Localization;
+
 namespace sharpcommander;
 
 public partial class PathVerifyForm : Form
@@ -11,6 +13,7 @@ public partial class PathVerifyForm : Form
     public PathVerifyForm(string[] sourcetrails, string targettrail)
     {
         InitializeComponent();
+        Localizer.Localize(this);
         Targettrails = targettrail;
         textBox2.Text = targettrail;
         textBox1.Text = sourcetrails is [var single] ? single : @"\*";

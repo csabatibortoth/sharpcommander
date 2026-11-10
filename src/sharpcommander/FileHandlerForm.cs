@@ -1,16 +1,18 @@
 using System.Diagnostics;
 using System.Globalization;
 using System.Text;
+using sharpcommander.Localization;
 
 namespace sharpcommander;
 
-public partial class FileHandlerForm : Form
+public partial class FileHandlerForm : Form, ILocalizable
 {
     private const string ParentEntry = "/.../";
 
     public FileHandlerForm()
     {
         InitializeComponent();
+        Localizer.Localize(this);
 
         int index = 0;
         foreach (string drive in Directory.GetLogicalDrives())
@@ -23,6 +25,16 @@ public partial class FileHandlerForm : Form
         }
         comboBox1.SelectedIndex = index;
     } //constructor of File Handler form
+
+    void ILocalizable.ApplyLocalization()
+    {
+        // Column headers are not controls, so the name-based lookup cannot reach them.
+        nameCol.Text = Localizer.Get("FileHandlerForm.nameCol");
+        extensionCol.Text = Localizer.Get("FileHandlerForm.extensionCol");
+        sizeCol.Text = Localizer.Get("FileHandlerForm.sizeCol");
+        dateCol.Text = Localizer.Get("FileHandlerForm.dateCol");
+        fullPath.Text = Localizer.Get("FileHandlerForm.fullPath");
+    }
 
     #region FormHandling
 
@@ -43,7 +55,7 @@ public partial class FileHandlerForm : Form
         }
         catch (UnauthorizedAccessException)
         {
-            MessageBox.Show("Nincs megfelelő joga a mappa megnyitásához!");
+            MessageBox.Show(Strings.AccessDenied);
             Text = SelectedDrive;
             PopulateList();
         }

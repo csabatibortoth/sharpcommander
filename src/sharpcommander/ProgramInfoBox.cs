@@ -1,20 +1,26 @@
 using System.Reflection;
+using sharpcommander.Localization;
 
 namespace sharpcommander;
 
-partial class ProgramInfoBox : Form
+partial class ProgramInfoBox : Form, ILocalizable
 {
     private static readonly Assembly ThisAssembly = typeof(ProgramInfoBox).Assembly;
 
     public ProgramInfoBox()
     {
         InitializeComponent();
-        Text = $"About {AssemblyTitle}";
         labelProductName.Text = AssemblyProduct;
-        labelVersion.Text = $"Version {AssemblyVersion}";
         labelCopyright.Text = AssemblyCopyright;
         labelCompanyName.Text = AssemblyCompany;
         textBoxDescription.Text = AssemblyDescription;
+        Localizer.Localize(this);
+    }
+
+    void ILocalizable.ApplyLocalization()
+    {
+        Text = Strings.AboutTitle(AssemblyTitle);
+        labelVersion.Text = Strings.AboutVersion(AssemblyVersion);
     }
 
     #region Assembly Attribute Accessors

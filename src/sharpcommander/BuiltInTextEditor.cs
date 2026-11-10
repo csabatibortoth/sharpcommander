@@ -1,11 +1,18 @@
+using sharpcommander.Localization;
+
 namespace sharpcommander;
 
-public partial class BuiltInTextEditor : Form
+public partial class BuiltInTextEditor : Form, ILocalizable
 {
     public BuiltInTextEditor(string[]? text)
     {
         InitializeComponent();
         richTextBox1.Lines = text;
-        Text = "Sharp Editor 0.1 (Csak Megtekintés)";
+        Localizer.Localize(this);
+    }
+
+    void ILocalizable.ApplyLocalization()
+    {
+        Text = Strings.EditorTitle;
     }
 }

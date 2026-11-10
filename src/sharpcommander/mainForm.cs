@@ -2,14 +2,14 @@
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.IO.Compression;
+using sharpcommander.Localization;
 
 namespace sharpcommander;
 
-public partial class mainForm : Form
+public partial class mainForm : Form, ILocalizable
 {
     private const string UpdateVersionUrl = "http://jamela.zxq.net/sharp/version.txt";
     private const string UpdatePackageUrl = "http://jamela.zxq.net/sharp/sharpcmd.zip";
-    private const string NothingSelectedMessage = "Még nem választott ki elemet!";
 
     private static readonly HttpClient Http = new() { Timeout = TimeSpan.FromSeconds(30) };
 
@@ -22,11 +22,15 @@ public partial class mainForm : Form
     private string sourcef = "";
     private string search = "";
 
+    private readonly string productName; // window caption as designed, without the version
+    private readonly ToolStripMenuItem languageMenu = new() { Name = "languageToolStripMenuItem" };
+
     public mainForm()
     {
         InitializeComponent();
-
-        Text += " " + ProductVersion + " BETA";
+        productName = Text;
+        BuildLanguageMenu();
+        Localizer.Localize(this);
 
         /*Here is the initialization of the listviews*/
         LeftForm = new FileHandlerForm();
@@ -42,6 +46,46 @@ public partial class mainForm : Form
         LeftForm.Show();
         RightForm.Show();
     } //constructor of the main form
+
+    #region Localization
+
+    /// <summary>Adds the language menu: "system default" plus one entry per available translation.</summary>
+    private void BuildLanguageMenu()
+    {
+        languageMenu.Font = helpToolStripMenuItem.Font;
+        languageMenu.Image = Properties.Resources.configure;
+
+        languageMenu.DropDownItems.Add(new ToolStripMenuItem { Name = "systemLanguageToolStripMenuItem" });
+        languageMenu.DropDownItems.Add(new ToolStripSeparator());
+        foreach (var language in Localizer.SupportedLanguages)
+        {
+            // Each language is listed under its own name so it can be found from any language.
+            string name = language.TextInfo.ToTitleCase(language.NativeName);
+            languageMenu.DropDownItems.Add(new ToolStripMenuItem(name) { Tag = language.Name });
+        }
+
+        foreach (ToolStripMenuItem item in languageMenu.DropDownItems.OfType<ToolStripMenuItem>())
+        {
+            // No tag = follow the system language.
+            item.Click += (_, _) => Localizer.SetLanguage((string?)item.Tag);
+        }
+
+        mainMenu.Items.Insert(mainMenu.Items.IndexOf(helpToolStripMenuItem), languageMenu);
+    }
+
+    void ILocalizable.ApplyLocalization()
+    {
+        Text = $"{productName} {ProductVersion} BETA";
+        toolStripTextBox1.Text = Strings.SearchPrompt;
+        saveDownloaded.Filter = Strings.ZipFilter;
+
+        foreach (ToolStripMenuItem item in languageMenu.DropDownItems.OfType<ToolStripMenuItem>())
+        {
+            item.Checked = (string?)item.Tag == Localizer.SelectedLanguage;
+        }
+    }
+
+    #endregion
 
     #region FunctionsAndMethods
 
@@ -82,7 +126,7 @@ public partial class mainForm : Form
         }
         if (!active.IsChecked())
         {
-            MessageBox.Show(NothingSelectedMessage);
+            MessageBox.Show(Strings.NothingSelected);
             return;
         }
 
@@ -131,7 +175,7 @@ public partial class mainForm : Form
             if (File.Exists(item))
             {
                 string target = Path.Combine(destination, Path.GetFileName(item));
-                if (!File.Exists(target) || Confirm("Biztos, hogy felülírja a " + item + "?"))
+                if (!File.Exists(target) || Confirm(Strings.ConfirmOverwriteItem(item)))
                 {
                     File.Copy(item, target, true);
                 }
@@ -144,7 +188,7 @@ public partial class mainForm : Form
                     Directory.CreateDirectory(newdirname);
                     copyElement(Directory.GetFileSystemEntries(item), newdirname);
                 }
-                else if (Confirm("Biztos, hogy felülírja a " + item + "?"))
+                else if (Confirm(Strings.ConfirmOverwriteItem(item)))
                 {
                     string newdirname = Path.Combine(destination, Path.GetDirectoryName(item) ?? "");
                     copyElement(Directory.GetFileSystemEntries(item), newdirname);
@@ -164,7 +208,7 @@ public partial class mainForm : Form
                 {
                     File.Move(item, target);
                 }
-                else if (Confirm("Biztos, hogy felülírja a Fájlokat?"))
+                else if (Confirm(Strings.ConfirmOverwriteFiles))
                 {
                     File.Move(item, target, overwrite: true);
                 }
@@ -178,7 +222,7 @@ public partial class mainForm : Form
                     moveElement(Directory.GetFileSystemEntries(item), newdirname);
                     Directory.Delete(item);
                 }
-                else if (Confirm("Biztos, hogy felülírja a Mappa tartalmát?"))
+                else if (Confirm(Strings.ConfirmOverwriteFolder))
                 {
                     string newdirname = Path.Combine(destination, Path.GetDirectoryName(item) ?? "");
                     Directory.CreateDirectory(newdirname);
@@ -245,7 +289,7 @@ public partial class mainForm : Form
             }
             else if (Directory.Exists(item))
             {
-                MessageBox.Show("Mappákat még nem tudok tömöríteni!");
+                MessageBox.Show(Strings.CannotCompressFolders);
             }
         }
     }
@@ -257,7 +301,7 @@ public partial class mainForm : Form
         {
             byte[] package = await Http.GetByteArrayAsync(UpdatePackageUrl);
             await File.WriteAllBytesAsync(saveDownloaded.FileName, package);
-            MessageBox.Show("Letöltés befejezve! Manuális telepítés!");
+            MessageBox.Show(Strings.DownloadFinished);
             Process.Start(new ProcessStartInfo(saveDownloaded.FileName) { UseShellExecute = true });
         }
     } //this method downloads the update file
@@ -299,13 +343,13 @@ public partial class mainForm : Form
         {
             return;
         }
-        if (!Confirm("Biztos, hogy törli kijelölt elemeket?"))
+        if (!Confirm(Strings.ConfirmDelete))
         {
             return;
         }
         if (!active.IsChecked())
         {
-            MessageBox.Show(NothingSelectedMessage);
+            MessageBox.Show(Strings.NothingSelected);
             return;
         }
 
@@ -316,7 +360,7 @@ public partial class mainForm : Form
 
     private void toolStripRenameButton_Click(object? sender, EventArgs e)
     {
-        MessageBox.Show("Fejlesztés alatt");
+        MessageBox.Show(Strings.UnderDevelopment);
     } //rename button
 
     private void toolStripEditButton_Click(object? sender, EventArgs e)
@@ -330,8 +374,8 @@ public partial class mainForm : Form
     private void searhToolStripButton_Click(object? sender, EventArgs e)
     {
         search = toolStripTextBox1.Text;
-        toolStripTextBox1.Text = "Mit akarsz keresni?";
-        MessageBox.Show("Fejlesztés alatt");
+        toolStripTextBox1.Text = Strings.SearchPrompt;
+        MessageBox.Show(Strings.UnderDevelopment);
     }
 
     private void toolStripTextBox1_Click(object? sender, EventArgs e)
@@ -365,7 +409,7 @@ public partial class mainForm : Form
             if (!Version.TryParse(line?.Trim(), out Version? latest) ||
                 !Version.TryParse(ProductVersion, out Version? current))
             {
-                MessageBox.Show("Nem sikerült ellenőrizni a frissítést!");
+                MessageBox.Show(Strings.UpdateCheckFailed);
             }
             else if (latest > current)
             {
@@ -374,7 +418,7 @@ public partial class mainForm : Form
             }
             else
             {
-                MessageBox.Show("Legújabb verziót használja");
+                MessageBox.Show(Strings.UpToDate);
             }
         }
         catch (Exception ex) when (ex is HttpRequestException or TaskCanceledException or IOException or Win32Exception)
@@ -403,17 +447,17 @@ public partial class mainForm : Form
 
     private void decompressToolButton_Click(object? sender, EventArgs e)
     {
-        MessageBox.Show("Fejlesztés alatt...");
+        MessageBox.Show(Strings.UnderDevelopment);
     }
 
     private void ftpToolButton_Click(object? sender, EventArgs e)
     {
-        MessageBox.Show("Fejlesztés alatt...");
+        MessageBox.Show(Strings.UnderDevelopment);
     }
 
     private void newftpToolButton_Click(object? sender, EventArgs e)
     {
-        MessageBox.Show("Fejlesztés alatt...");
+        MessageBox.Show(Strings.UnderDevelopment);
     }
 
     #endregion
@@ -429,12 +473,12 @@ public partial class mainForm : Form
 
     private void copyBackground_ProgressChanged(object? sender, ProgressChangedEventArgs e)
     {
-        ShowBusy("Másolás...");
+        ShowBusy(Strings.StatusCopying);
     } //progressbar handling
 
     private void copyBackground_RunWorkerCompleted(object? sender, RunWorkerCompletedEventArgs e)
     {
-        ShowFinished("Másolás befejezve!");
+        ShowFinished(Strings.CopyFinished);
     } //copy completed
 
     private void moveBackground_DoWork(object? sender, DoWorkEventArgs e)
@@ -444,12 +488,12 @@ public partial class mainForm : Form
 
     private void moveBackground_ProgressChanged(object? sender, ProgressChangedEventArgs e)
     {
-        ShowBusy("Áthelyezés...");
+        ShowBusy(Strings.StatusMoving);
     } //progressbar handling
 
     private void moveBackground_RunWorkerCompleted(object? sender, RunWorkerCompletedEventArgs e)
     {
-        ShowFinished("Áthelyezés befejezve!");
+        ShowFinished(Strings.MoveFinished);
     } //move completed
 
     private void deleteBackground_DoWork(object? sender, DoWorkEventArgs e)
@@ -459,12 +503,12 @@ public partial class mainForm : Form
 
     private void deleteBackground_ProgressChanged(object? sender, ProgressChangedEventArgs e)
     {
-        ShowBusy("Törlés...");
+        ShowBusy(Strings.StatusDeleting);
     }
 
     private void deleteBackground_RunWorkerCompleted(object? sender, RunWorkerCompletedEventArgs e)
     {
-        ShowFinished("Törlés befejezve!");
+        ShowFinished(Strings.DeleteFinished);
     }
 
     private void compressBackground_DoWork(object? sender, DoWorkEventArgs e)
@@ -474,12 +518,12 @@ public partial class mainForm : Form
 
     private void compressBackground_ProgressChanged(object? sender, ProgressChangedEventArgs e)
     {
-        ShowBusy("Tömörítés...");
+        ShowBusy(Strings.StatusCompressing);
     }
 
     private void compressBackground_RunWorkerCompleted(object? sender, RunWorkerCompletedEventArgs e)
     {
-        ShowFinished("Tömörítés befejezve!");
+        ShowFinished(Strings.CompressFinished);
     }
 
     #endregion

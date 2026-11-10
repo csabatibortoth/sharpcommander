@@ -30,7 +30,7 @@
     <Company>jamela.zxq.net</Company>
     <Product>Sharp Commander</Product>
     <Copyright>Copyright © Jamela 2010</Copyright>
-    <NeutralLanguage>hu-HU</NeutralLanguage>
+    <NeutralLanguage>hu</NeutralLanguage>
     <!-- Keep ProductVersion a plain "a.b.c.d" (no "+<commit hash>" suffix); it is shown in the title bar. -->
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
   </PropertyGroup>

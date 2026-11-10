@@ -1,3 +1,5 @@
+using sharpcommander.Localization;
+
 namespace sharpcommander;
 
 public partial class NewFolderDialog : Form
@@ -7,6 +9,7 @@ public partial class NewFolderDialog : Form
     public NewFolderDialog()
     {
         InitializeComponent();
+        Localizer.Localize(this);
     }
 
     private void textBox1_KeyPress(object sender, KeyPressEventArgs e)

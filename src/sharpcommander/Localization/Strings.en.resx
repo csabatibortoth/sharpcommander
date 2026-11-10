@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- English UI strings. Keys must match Strings.resx (see the conventions described there). -->
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Shared menu items and buttons -->
+  <data name="Common.fileToolStripMenuItem" xml:space="preserve"><value>&amp;File</value></data>
+  <data name="Common.newToolStripMenuItem" xml:space="preserve"><value>&amp;New</value></data>
+  <data name="Common.openToolStripMenuItem" xml:space="preserve"><value>&amp;Open</value></data>
+  <data name="Common.saveToolStripMenuItem" xml:space="preserve"><value>&amp;Save</value></data>
+  <data name="Common.saveAsToolStripMenuItem" xml:space="preserve"><value>Save &amp;As</value></data>
+  <data name="Common.printToolStripMenuItem" xml:space="preserve"><value>&amp;Print</value></data>
+  <data name="Common.printPreviewToolStripMenuItem" xml:space="preserve"><value>Print Pre&amp;view</value></data>
+  <data name="Common.exitToolStripMenuItem" xml:space="preserve"><value>E&amp;xit</value></data>
+  <data name="Common.editToolStripMenuItem" xml:space="preserve"><value>&amp;Edit</value></data>
+  <data name="Common.undoToolStripMenuItem" xml:space="preserve"><value>&amp;Undo</value></data>
+  <data name="Common.redoToolStripMenuItem" xml:space="preserve"><value>&amp;Redo</value></data>
+  <data name="Common.cutToolStripMenuItem" xml:space="preserve"><value>Cu&amp;t</value></data>
+  <data name="Common.copyToolStripMenuItem" xml:space="preserve"><value>&amp;Copy</value></data>
+  <data name="Common.pasteToolStripMenuItem" xml:space="preserve"><value>&amp;Paste</value></data>
+  <data name="Common.selectAllToolStripMenuItem" xml:space="preserve"><value>Select &amp;All</value></data>
+  <data name="Common.toolsToolStripMenuItem" xml:space="preserve"><value>&amp;Tools</value></data>
+  <data name="Common.customizeToolStripMenuItem" xml:space="preserve"><value>&amp;Customize</value></data>
+  <data name="Common.optionsToolStripMenuItem" xml:space="preserve"><value>&amp;Options</value></data>
+  <data name="Common.helpToolStripMenuItem" xml:space="preserve"><value>&amp;Help</value></data>
+  <data name="Common.contentsToolStripMenuItem" xml:space="preserve"><value>&amp;Contents</value></data>
+  <data name="Common.indexToolStripMenuItem" xml:space="preserve"><value>&amp;Index</value></data>
+  <data name="Common.searchToolStripMenuItem" xml:space="preserve"><value>&amp;Search</value></data>
+  <data name="Common.aboutToolStripMenuItem" xml:space="preserve"><value>&amp;About...</value></data>
+  <data name="Common.cancelBtn" xml:space="preserve"><value>Cancel</value></data>
+
+  <!-- mainForm -->
+  <data name="mainForm.newToolStripMenuItem" xml:space="preserve"><value>&amp;New..</value></data>
+  <data name="mainForm.updateToolStripMenuItem" xml:space="preserve"><value>&amp;Update</value></data>
+  <data name="mainForm.languageToolStripMenuItem" xml:space="preserve"><value>&amp;Language</value></data>
+  <data name="mainForm.systemLanguageToolStripMenuItem" xml:space="preserve"><value>System default</value></data>
+  <data name="mainForm.toolStripStatusLabel1" xml:space="preserve"><value>Progress: </value></data>
+  <data name="mainForm.newToolStripButton" xml:space="preserve"><value>&amp;New Folder</value></data>
+  <data name="mainForm.saveToolStripButton" xml:space="preserve"><value>&amp;Copy</value></data>
+  <data name="mainForm.cutToolStripButton" xml:space="preserve"><value>&amp;Move</value></data>
+  <data name="mainForm.toolStripDeleteButton" xml:space="preserve"><value>&amp;Delete</value></data>
+  <data name="mainForm.toolStripRenameButton" xml:space="preserve"><value>&amp;Rename</value></data>
+  <data name="mainForm.toolStripEditButton" xml:space="preserve"><value>Ed&amp;it</value></data>
+  <data name="mainForm.searhToolStripButton" xml:space="preserve"><value>Search</value></data>
+  <data name="mainForm.toolStripLabel3" xml:space="preserve"><value>Search for:</value></data>
+  <data name="mainForm.refreshToolButton" xml:space="preserve"><value>Refresh</value></data>
+  <data name="mainForm.refreshToolButton.ToolTip" xml:space="preserve"><value>Refresh panels</value></data>
+  <data name="mainForm.compressToolButton" xml:space="preserve"><value>Compress</value></data>
+  <data name="mainForm.compressToolButton.ToolTip" xml:space="preserve"><value>Compress selected items</value></data>
+  <data name="mainForm.decompressToolButton" xml:space="preserve"><value>Extract</value></data>
+  <data name="mainForm.decompressToolButton.ToolTip" xml:space="preserve"><value>Extract selected items</value></data>
+  <data name="mainForm.ftpToolButton.ToolTip" xml:space="preserve"><value>Connect to FTP server</value></data>
+  <data name="mainForm.newftpToolButton" xml:space="preserve"><value>Create new FTP connection</value></data>
+
+  <!-- FileHandlerForm -->
+  <data name="FileHandlerForm.label1" xml:space="preserve"><value>Drive letter:</value></data>
+  <data name="FileHandlerForm.nameCol" xml:space="preserve"><value>Name:</value></data>
+  <data name="FileHandlerForm.extensionCol" xml:space="preserve"><value>Extension:</value></data>
+  <data name="FileHandlerForm.sizeCol" xml:space="preserve"><value>Size: (Kb)</value></data>
+  <data name="FileHandlerForm.dateCol" xml:space="preserve"><value>Date:</value></data>
+  <data name="FileHandlerForm.fullPath" xml:space="preserve"><value>Full path:</value></data>
+
+  <!-- BuiltInTextEditor -->
+  <data name="BuiltInTextEditor.newToolStripButton" xml:space="preserve"><value>&amp;New</value></data>
+  <data name="BuiltInTextEditor.openToolStripButton" xml:space="preserve"><value>&amp;Open</value></data>
+  <data name="BuiltInTextEditor.saveToolStripButton" xml:space="preserve"><value>&amp;Save</value></data>
+  <data name="BuiltInTextEditor.printToolStripButton" xml:space="preserve"><value>&amp;Print</value></data>
+  <data name="BuiltInTextEditor.cutToolStripButton" xml:space="preserve"><value>C&amp;ut</value></data>
+  <data name="BuiltInTextEditor.copyToolStripButton" xml:space="preserve"><value>&amp;Copy</value></data>
+  <data name="BuiltInTextEditor.pasteToolStripButton" xml:space="preserve"><value>&amp;Paste</value></data>
+  <data name="BuiltInTextEditor.helpToolStripButton" xml:space="preserve"><value>He&amp;lp</value></data>
+
+  <!-- Dialogs -->
+  <data name="AreYouSureForm.$this" xml:space="preserve"><value>Confirmation...</value></data>
+  <data name="AreYouSureForm.yesBtn" xml:space="preserve"><value>Yes</value></data>
+  <data name="AreYouSureForm.noBtn" xml:space="preserve"><value>No</value></data>
+  <data name="AreYouSureForm.button1" xml:space="preserve"><value>All</value></data>
+  <data name="NewFolderDialog.$this" xml:space="preserve"><value>Create new folder...</value></data>
+  <data name="NewFolderDialog.label1" xml:space="preserve"><value>Folder name:</value></data>
+  <data name="PathVerifyForm.resourceLBL" xml:space="preserve"><value>Source:</value></data>
+  <data name="PathVerifyForm.targetLBL" xml:space="preserve"><value>Target:</value></data>
+  <data name="ProcessForm.label1" xml:space="preserve"><value>Task:</value></data>
+  <data name="ProcessForm.label2" xml:space="preserve"><value>Overall progress:</value></data>
+  <data name="StatusForm.$this" xml:space="preserve"><value>Operation in progress...</value></data>
+
+  <!-- Strings used from code (Strings.cs) -->
+  <data name="Msg.ConfirmOverwriteItem" xml:space="preserve"><value>Are you sure you want to overwrite {0}?</value></data>
+  <data name="Msg.ConfirmOverwriteFiles" xml:space="preserve"><value>Are you sure you want to overwrite the files?</value></data>
+  <data name="Msg.ConfirmOverwriteFolder" xml:space="preserve"><value>Are you sure you want to overwrite the folder's contents?</value></data>
+  <data name="Msg.ConfirmDelete" xml:space="preserve"><value>Are you sure you want to delete the selected items?</value></data>
+  <data name="Msg.NothingSelected" xml:space="preserve"><value>No item is selected yet!</value></data>
+  <data name="Msg.CannotCompressFolders" xml:space="preserve"><value>Folders cannot be compressed yet!</value></data>
+  <data name="Msg.DownloadFinished" xml:space="preserve"><value>Download finished! Install it manually!</value></data>
+  <data name="Msg.UnderDevelopment" xml:space="preserve"><value>Under development...</value></data>
+  <data name="Msg.SearchPrompt" xml:space="preserve"><value>What do you want to search for?</value></data>
+  <data name="Msg.UpToDate" xml:space="preserve"><value>You are using the latest version</value></data>
+  <data name="Msg.UpdateCheckFailed" xml:space="preserve"><value>Could not check for updates!</value></data>
+  <data name="Msg.AccessDenied" xml:space="preserve"><value>You do not have permission to open this folder!</value></data>
+  <data name="Msg.ZipFilter" xml:space="preserve"><value>ZIP files |*.zip</value></data>
+  <data name="Msg.CopyFinished" xml:space="preserve"><value>Copy finished!</value></data>
+  <data name="Msg.MoveFinished" xml:space="preserve"><value>Move finished!</value></data>
+  <data name="Msg.DeleteFinished" xml:space="preserve"><value>Delete finished!</value></data>
+  <data name="Msg.CompressFinished" xml:space="preserve"><value>Compression finished!</value></data>
+  <data name="Status.Copying" xml:space="preserve"><value>Copying...</value></data>
+  <data name="Status.Moving" xml:space="preserve"><value>Moving...</value></data>
+  <data name="Status.Deleting" xml:space="preserve"><value>Deleting...</value></data>
+  <data name="Status.Compressing" xml:space="preserve"><value>Compressing...</value></data>
+  <data name="Editor.Title" xml:space="preserve"><value>Sharp Editor 0.1 (Read Only)</value></data>
+  <data name="About.Title" xml:space="preserve"><value>About {0}</value></data>
+  <data name="About.Version" xml:space="preserve"><value>Version {0}</value></data>
+</root>
