@@ -52,7 +52,7 @@
   <data name="mainForm.compressToolButton.ToolTip" xml:space="preserve"><value>Compress selected items</value></data>
   <data name="mainForm.decompressToolButton" xml:space="preserve"><value>Extract</value></data>
   <data name="mainForm.decompressToolButton.ToolTip" xml:space="preserve"><value>Extract selected items</value></data>
-  <data name="mainForm.ftpToolButton.ToolTip" xml:space="preserve"><value>Connect to FTP server</value></data>
+  <data name="mainForm.ftpToolButton.ToolTip" xml:space="preserve"><value>Connect to FTP server / disconnect</value></data>
   <data name="mainForm.newftpToolButton" xml:space="preserve"><value>Create new FTP connection</value></data>
 
   <!-- FileHandlerForm -->
@@ -84,17 +84,12 @@
   <data name="PathVerifyForm.targetLBL" xml:space="preserve"><value>Target:</value></data>
   <data name="ProcessForm.label1" xml:space="preserve"><value>Task:</value></data>
   <data name="ProcessForm.label2" xml:space="preserve"><value>Overall progress:</value></data>
-  <data name="StatusForm.$this" xml:space="preserve"><value>Operation in progress...</value></data>
 
   <!-- Strings used from code (Strings.cs) -->
   <data name="Msg.ConfirmOverwriteItem" xml:space="preserve"><value>Are you sure you want to overwrite {0}?</value></data>
-  <data name="Msg.ConfirmOverwriteFiles" xml:space="preserve"><value>Are you sure you want to overwrite the files?</value></data>
-  <data name="Msg.ConfirmOverwriteFolder" xml:space="preserve"><value>Are you sure you want to overwrite the folder's contents?</value></data>
   <data name="Msg.ConfirmDelete" xml:space="preserve"><value>Are you sure you want to delete the selected items?</value></data>
   <data name="Msg.NothingSelected" xml:space="preserve"><value>No item is selected yet!</value></data>
-  <data name="Msg.CannotCompressFolders" xml:space="preserve"><value>Folders cannot be compressed yet!</value></data>
   <data name="Msg.DownloadFinished" xml:space="preserve"><value>Download finished! Install it manually!</value></data>
-  <data name="Msg.UnderDevelopment" xml:space="preserve"><value>Under development...</value></data>
   <data name="Msg.SearchPrompt" xml:space="preserve"><value>What do you want to search for?</value></data>
   <data name="Msg.UpToDate" xml:space="preserve"><value>You are using the latest version</value></data>
   <data name="Msg.UpdateCheckFailed" xml:space="preserve"><value>Could not check for updates!</value></data>
@@ -108,7 +103,46 @@
   <data name="Status.Moving" xml:space="preserve"><value>Moving...</value></data>
   <data name="Status.Deleting" xml:space="preserve"><value>Deleting...</value></data>
   <data name="Status.Compressing" xml:space="preserve"><value>Compressing...</value></data>
-  <data name="Editor.Title" xml:space="preserve"><value>Sharp Editor 0.1 (Read Only)</value></data>
   <data name="About.Title" xml:space="preserve"><value>About {0}</value></data>
   <data name="About.Version" xml:space="preserve"><value>Version {0}</value></data>
+  <data name="Editor.Title" xml:space="preserve"><value>{0} - Sharp Editor</value></data>
+  <data name="Editor.Untitled" xml:space="preserve"><value>Untitled</value></data>
+  <data name="Editor.SaveChanges" xml:space="preserve"><value>Save changes to {0}?</value></data>
+  <data name="Editor.Filter" xml:space="preserve"><value>Text files|*.txt|All files|*.*</value></data>
+  <data name="Status.Scanning" xml:space="preserve"><value>Scanning...</value></data>
+  <data name="Status.Extracting" xml:space="preserve"><value>Extracting...</value></data>
+  <data name="Status.Searching" xml:space="preserve"><value>Searching...</value></data>
+  <data name="Status.Connecting" xml:space="preserve"><value>Connecting to {0}...</value></data>
+  <data name="Msg.ExtractFinished" xml:space="preserve"><value>Extraction finished!</value></data>
+  <data name="Msg.SameSourceAndTarget" xml:space="preserve"><value>Source and target are the same: {0}</value></data>
+  <data name="Msg.UnsupportedArchive" xml:space="preserve"><value>Unsupported archive: {0} (only .zip and .gz)</value></data>
+  <data name="Msg.UnsafeArchiveEntry" xml:space="preserve"><value>The archive contains an unsafe entry: {0}</value></data>
+  <data name="Msg.AlreadyExists" xml:space="preserve"><value>An item with this name already exists: {0}</value></data>
+  <data name="Msg.RenameSingleItem" xml:space="preserve"><value>Select exactly one item to rename!</value></data>
+  <data name="Msg.SearchPatternRequired" xml:space="preserve"><value>Enter what to search for!</value></data>
+  <data name="Msg.NoSearchResults" xml:space="preserve"><value>No results for: {0}</value></data>
+  <data name="Msg.ClipboardLocalOnly" xml:space="preserve"><value>Only local files can be copied to the clipboard!</value></data>
+  <data name="Rename.Title" xml:space="preserve"><value>Rename...</value></data>
+  <data name="Rename.Prompt" xml:space="preserve"><value>New name:</value></data>
+
+  <!-- FTP -->
+  <data name="mainForm.toolStripButton1" xml:space="preserve"><value>Home folder</value></data>
+  <data name="mainForm.toolStripButton2" xml:space="preserve"><value>Documents</value></data>
+  <data name="FtpConnectDialog.$this" xml:space="preserve"><value>FTP connection</value></data>
+  <data name="FtpConnectDialog.savedLbl" xml:space="preserve"><value>Saved connection:</value></data>
+  <data name="FtpConnectDialog.hostLbl" xml:space="preserve"><value>Server:</value></data>
+  <data name="FtpConnectDialog.userLbl" xml:space="preserve"><value>User name:</value></data>
+  <data name="FtpConnectDialog.passwordLbl" xml:space="preserve"><value>Password:</value></data>
+  <data name="FtpConnectDialog.securityLbl" xml:space="preserve"><value>Encryption:</value></data>
+  <data name="FtpConnectDialog.saveCheck" xml:space="preserve"><value>Save connection (without password)</value></data>
+  <data name="FtpConnectDialog.connectBtn" xml:space="preserve"><value>Connect</value></data>
+  <data name="Ftp.SecurityAuto" xml:space="preserve"><value>Automatic (TLS if available)</value></data>
+  <data name="Ftp.SecurityNone" xml:space="preserve"><value>None (plain FTP)</value></data>
+  <data name="Ftp.SecurityExplicit" xml:space="preserve"><value>Explicit TLS (FTPS)</value></data>
+  <data name="Ftp.SecurityImplicit" xml:space="preserve"><value>Implicit TLS (FTPS)</value></data>
+  <data name="Ftp.HostRequired" xml:space="preserve"><value>Enter the server address!</value></data>
+  <data name="Ftp.UntrustedCertificate" xml:space="preserve"><value>The server's certificate could not be verified:
+{0}
+
+Trust it anyway?</value></data>
 </root>

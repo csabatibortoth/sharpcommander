@@ -61,7 +61,7 @@
   <data name="mainForm.compressToolButton.ToolTip" xml:space="preserve"><value>Kijelöltek tömörítése</value></data>
   <data name="mainForm.decompressToolButton" xml:space="preserve"><value>Kitömörítés</value></data>
   <data name="mainForm.decompressToolButton.ToolTip" xml:space="preserve"><value>Kijelöltek kitömörítése</value></data>
-  <data name="mainForm.ftpToolButton.ToolTip" xml:space="preserve"><value>Kapcsolódás FTP szerverhez</value></data>
+  <data name="mainForm.ftpToolButton.ToolTip" xml:space="preserve"><value>Kapcsolódás FTP szerverhez / kapcsolat bontása</value></data>
   <data name="mainForm.newftpToolButton" xml:space="preserve"><value>Új FTP Kapcsolat létrehozása</value></data>
 
   <!-- FileHandlerForm -->
@@ -93,17 +93,12 @@
   <data name="PathVerifyForm.targetLBL" xml:space="preserve"><value>Cél:</value></data>
   <data name="ProcessForm.label1" xml:space="preserve"><value>Feladat:</value></data>
   <data name="ProcessForm.label2" xml:space="preserve"><value>Teljes Folyamat:</value></data>
-  <data name="StatusForm.$this" xml:space="preserve"><value>Művelet Folyamatban...</value></data>
 
   <!-- Strings used from code (Strings.cs) -->
   <data name="Msg.ConfirmOverwriteItem" xml:space="preserve"><value>Biztos, hogy felülírja a {0}?</value></data>
-  <data name="Msg.ConfirmOverwriteFiles" xml:space="preserve"><value>Biztos, hogy felülírja a Fájlokat?</value></data>
-  <data name="Msg.ConfirmOverwriteFolder" xml:space="preserve"><value>Biztos, hogy felülírja a Mappa tartalmát?</value></data>
   <data name="Msg.ConfirmDelete" xml:space="preserve"><value>Biztos, hogy törli kijelölt elemeket?</value></data>
   <data name="Msg.NothingSelected" xml:space="preserve"><value>Még nem választott ki elemet!</value></data>
-  <data name="Msg.CannotCompressFolders" xml:space="preserve"><value>Mappákat még nem tudok tömöríteni!</value></data>
   <data name="Msg.DownloadFinished" xml:space="preserve"><value>Letöltés befejezve! Manuális telepítés!</value></data>
-  <data name="Msg.UnderDevelopment" xml:space="preserve"><value>Fejlesztés alatt...</value></data>
   <data name="Msg.SearchPrompt" xml:space="preserve"><value>Mit akarsz keresni?</value></data>
   <data name="Msg.UpToDate" xml:space="preserve"><value>Legújabb verziót használja</value></data>
   <data name="Msg.UpdateCheckFailed" xml:space="preserve"><value>Nem sikerült ellenőrizni a frissítést!</value></data>
@@ -117,7 +112,46 @@
   <data name="Status.Moving" xml:space="preserve"><value>Áthelyezés...</value></data>
   <data name="Status.Deleting" xml:space="preserve"><value>Törlés...</value></data>
   <data name="Status.Compressing" xml:space="preserve"><value>Tömörítés...</value></data>
-  <data name="Editor.Title" xml:space="preserve"><value>Sharp Editor 0.1 (Csak Megtekintés)</value></data>
   <data name="About.Title" xml:space="preserve"><value>{0} névjegye</value></data>
   <data name="About.Version" xml:space="preserve"><value>Verzió: {0}</value></data>
+  <data name="Editor.Title" xml:space="preserve"><value>{0} - Sharp Editor</value></data>
+  <data name="Editor.Untitled" xml:space="preserve"><value>Névtelen</value></data>
+  <data name="Editor.SaveChanges" xml:space="preserve"><value>Menti a(z) {0} módosításait?</value></data>
+  <data name="Editor.Filter" xml:space="preserve"><value>Szöveges fájlok|*.txt|Minden fájl|*.*</value></data>
+  <data name="Status.Scanning" xml:space="preserve"><value>Elemek számbavétele...</value></data>
+  <data name="Status.Extracting" xml:space="preserve"><value>Kitömörítés...</value></data>
+  <data name="Status.Searching" xml:space="preserve"><value>Keresés...</value></data>
+  <data name="Status.Connecting" xml:space="preserve"><value>Kapcsolódás: {0}...</value></data>
+  <data name="Msg.ExtractFinished" xml:space="preserve"><value>Kitömörítés befejezve!</value></data>
+  <data name="Msg.SameSourceAndTarget" xml:space="preserve"><value>A forrás és a cél megegyezik: {0}</value></data>
+  <data name="Msg.UnsupportedArchive" xml:space="preserve"><value>Nem támogatott archívum: {0} (csak .zip és .gz)</value></data>
+  <data name="Msg.UnsafeArchiveEntry" xml:space="preserve"><value>Az archívum nem biztonságos bejegyzést tartalmaz: {0}</value></data>
+  <data name="Msg.AlreadyExists" xml:space="preserve"><value>Már létezik ilyen nevű elem: {0}</value></data>
+  <data name="Msg.RenameSingleItem" xml:space="preserve"><value>Átnevezéshez pontosan egy elemet válasszon ki!</value></data>
+  <data name="Msg.SearchPatternRequired" xml:space="preserve"><value>Írja be, mit keres!</value></data>
+  <data name="Msg.NoSearchResults" xml:space="preserve"><value>Nincs találat erre: {0}</value></data>
+  <data name="Msg.ClipboardLocalOnly" xml:space="preserve"><value>Vágólapra csak helyi fájlok másolhatók!</value></data>
+  <data name="Rename.Title" xml:space="preserve"><value>Átnevezés...</value></data>
+  <data name="Rename.Prompt" xml:space="preserve"><value>Új név:</value></data>
+
+  <!-- FTP -->
+  <data name="mainForm.toolStripButton1" xml:space="preserve"><value>Saját mappa</value></data>
+  <data name="mainForm.toolStripButton2" xml:space="preserve"><value>Dokumentumok</value></data>
+  <data name="FtpConnectDialog.$this" xml:space="preserve"><value>FTP kapcsolat</value></data>
+  <data name="FtpConnectDialog.savedLbl" xml:space="preserve"><value>Mentett kapcsolat:</value></data>
+  <data name="FtpConnectDialog.hostLbl" xml:space="preserve"><value>Kiszolgáló:</value></data>
+  <data name="FtpConnectDialog.userLbl" xml:space="preserve"><value>Felhasználónév:</value></data>
+  <data name="FtpConnectDialog.passwordLbl" xml:space="preserve"><value>Jelszó:</value></data>
+  <data name="FtpConnectDialog.securityLbl" xml:space="preserve"><value>Titkosítás:</value></data>
+  <data name="FtpConnectDialog.saveCheck" xml:space="preserve"><value>Kapcsolat mentése (jelszó nélkül)</value></data>
+  <data name="FtpConnectDialog.connectBtn" xml:space="preserve"><value>Kapcsolódás</value></data>
+  <data name="Ftp.SecurityAuto" xml:space="preserve"><value>Automatikus (TLS, ha elérhető)</value></data>
+  <data name="Ftp.SecurityNone" xml:space="preserve"><value>Nincs (sima FTP)</value></data>
+  <data name="Ftp.SecurityExplicit" xml:space="preserve"><value>Explicit TLS (FTPS)</value></data>
+  <data name="Ftp.SecurityImplicit" xml:space="preserve"><value>Implicit TLS (FTPS)</value></data>
+  <data name="Ftp.HostRequired" xml:space="preserve"><value>Adja meg a kiszolgáló címét!</value></data>
+  <data name="Ftp.UntrustedCertificate" xml:space="preserve"><value>A kiszolgáló tanúsítványa nem ellenőrizhető:
+{0}
+
+Mégis megbízik benne?</value></data>
 </root>

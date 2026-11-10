@@ -8,13 +8,9 @@ namespace sharpcommander.Localization;
 internal static class Strings
 {
     public static string ConfirmOverwriteItem(string path) => Localizer.Format("Msg.ConfirmOverwriteItem", path);
-    public static string ConfirmOverwriteFiles => Localizer.Get("Msg.ConfirmOverwriteFiles");
-    public static string ConfirmOverwriteFolder => Localizer.Get("Msg.ConfirmOverwriteFolder");
     public static string ConfirmDelete => Localizer.Get("Msg.ConfirmDelete");
     public static string NothingSelected => Localizer.Get("Msg.NothingSelected");
-    public static string CannotCompressFolders => Localizer.Get("Msg.CannotCompressFolders");
     public static string DownloadFinished => Localizer.Get("Msg.DownloadFinished");
-    public static string UnderDevelopment => Localizer.Get("Msg.UnderDevelopment");
     public static string SearchPrompt => Localizer.Get("Msg.SearchPrompt");
     public static string UpToDate => Localizer.Get("Msg.UpToDate");
     public static string UpdateCheckFailed => Localizer.Get("Msg.UpdateCheckFailed");
@@ -31,7 +27,35 @@ internal static class Strings
     public static string StatusDeleting => Localizer.Get("Status.Deleting");
     public static string StatusCompressing => Localizer.Get("Status.Compressing");
 
-    public static string EditorTitle => Localizer.Get("Editor.Title");
     public static string AboutTitle(string product) => Localizer.Format("About.Title", product);
     public static string AboutVersion(string version) => Localizer.Format("About.Version", version);
+
+    public static string StatusScanning => Localizer.Get("Status.Scanning");
+    public static string StatusExtracting => Localizer.Get("Status.Extracting");
+    public static string StatusSearching => Localizer.Get("Status.Searching");
+    public static string StatusConnecting(string host) => Localizer.Format("Status.Connecting", host);
+    public static string ExtractFinished => Localizer.Get("Msg.ExtractFinished");
+
+    public static string SameSourceAndTarget(string name) => Localizer.Format("Msg.SameSourceAndTarget", name);
+    public static string UnsupportedArchive(string name) => Localizer.Format("Msg.UnsupportedArchive", name);
+    public static string UnsafeArchiveEntry(string name) => Localizer.Format("Msg.UnsafeArchiveEntry", name);
+    public static string AlreadyExists(string name) => Localizer.Format("Msg.AlreadyExists", name);
+    public static string RenameSingleItem => Localizer.Get("Msg.RenameSingleItem");
+    public static string RenameTitle => Localizer.Get("Rename.Title");
+    public static string RenamePrompt => Localizer.Get("Rename.Prompt");
+    public static string SearchPatternRequired => Localizer.Get("Msg.SearchPatternRequired");
+    public static string NoSearchResults(string pattern) => Localizer.Format("Msg.NoSearchResults", pattern);
+    public static string ClipboardLocalOnly => Localizer.Get("Msg.ClipboardLocalOnly");
+
+    public static string FtpSecurityAuto => Localizer.Get("Ftp.SecurityAuto");
+    public static string FtpSecurityNone => Localizer.Get("Ftp.SecurityNone");
+    public static string FtpSecurityExplicit => Localizer.Get("Ftp.SecurityExplicit");
+    public static string FtpSecurityImplicit => Localizer.Get("Ftp.SecurityImplicit");
+    public static string FtpHostRequired => Localizer.Get("Ftp.HostRequired");
+    public static string FtpUntrustedCertificate(string details) => Localizer.Format("Ftp.UntrustedCertificate", details);
+
+    public static string EditorTitle(string document) => Localizer.Format("Editor.Title", document);
+    public static string EditorUntitled => Localizer.Get("Editor.Untitled");
+    public static string EditorSaveChanges(string document) => Localizer.Format("Editor.SaveChanges", document);
+    public static string EditorFilter => Localizer.Get("Editor.Filter");
 }

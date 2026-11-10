@@ -1,6 +1,5 @@
 using System.Globalization;
 using System.Resources;
-using System.Text.Json;
 
 namespace sharpcommander.Localization;
 
@@ -25,8 +24,6 @@ internal static class Localizer
     private static readonly ResourceManager Resources =
         new("sharpcommander.Localization.Strings", typeof(Localizer).Assembly);
 
-    private static readonly string SettingsPath = Path.Combine(
-        Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Sharp Commander", "settings.json");
 
     // The language Windows asked for, captured before we override the UI culture.
     private static readonly CultureInfo SystemUICulture = CultureInfo.CurrentUICulture;
@@ -44,7 +41,7 @@ internal static class Localizer
     /// <summary>Loads the saved language choice and applies it. Call once, before any form is created.</summary>
     public static void Initialize()
     {
-        SelectedLanguage = Normalize(LoadSavedLanguage());
+        SelectedLanguage = Normalize(AppSettings.Current.Language);
         ApplyCulture();
     }
 
@@ -54,7 +51,8 @@ internal static class Localizer
     {
         SelectedLanguage = Normalize(language);
         ApplyCulture();
-        SaveLanguage();
+        AppSettings.Current.Language = SelectedLanguage;
+        AppSettings.Current.Save();
 
         foreach (Form form in Application.OpenForms.Cast<Form>().ToArray())
         {
@@ -157,30 +155,4 @@ internal static class Localizer
         SupportedLanguages.FirstOrDefault(c => string.Equals(c.Name, language, StringComparison.OrdinalIgnoreCase));
 
     private static string? Normalize(string? language) => FindSupported(language)?.Name;
-
-    private static string? LoadSavedLanguage()
-    {
-        try
-        {
-            using JsonDocument settings = JsonDocument.Parse(File.ReadAllText(SettingsPath));
-            return settings.RootElement.TryGetProperty("language", out JsonElement value) ? value.GetString() : null;
-        }
-        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException or JsonException or InvalidOperationException)
-        {
-            return null; // no (readable) settings yet: follow the system language
-        }
-    }
-
-    private static void SaveLanguage()
-    {
-        try
-        {
-            Directory.CreateDirectory(Path.GetDirectoryName(SettingsPath)!);
-            File.WriteAllText(SettingsPath, JsonSerializer.Serialize(new Dictionary<string, string?> { ["language"] = SelectedLanguage }));
-        }
-        catch (Exception ex) when (ex is IOException or UnauthorizedAccessException)
-        {
-            // Not being able to remember the choice must not break switching the language.
-        }
-    }
 }
