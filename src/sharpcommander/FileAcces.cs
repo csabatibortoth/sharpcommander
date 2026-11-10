@@ -1,54 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
+namespace sharpcommander;
 
-namespace sharpcommander
+internal class FileAcces
 {
-    class FileAcces
+    private readonly string[]? trails;
+
+    public FileAcces(string path)
     {
-        string[] trails;
-
-
-        public FileAcces(string path)
+        try
         {
-            try
-            {
-                try
-                {
-                    trails = Directory.GetFileSystemEntries(path);
-                }
-                catch (UnauthorizedAccessException uex)
-                {
-                    System.Windows.Forms.MessageBox.Show(uex.Message.ToString());
-                }
-            }
-            catch (IOException iex)
-            {
-                System.Windows.Forms.MessageBox.Show(iex.Message.ToString());
-            }
+            trails = Directory.GetFileSystemEntries(path);
         }
-
-
-
-
-        public string[] backpath()
+        catch (Exception ex) when (ex is UnauthorizedAccessException or IOException)
         {
-            return trails;
+            MessageBox.Show(ex.Message);
         }
-
-        public static string backparent(string path)
-        {
-            try
-            {
-                return Directory.GetParent(path).ToString();
-            }
-            catch (NullReferenceException)
-            {
-                return path;
-            }
-        }
-
     }
+
+    public string[]? backpath() => trails;
+
+    /// <summary>Returns the parent folder of <paramref name="path"/>, or the path itself for a drive root.</summary>
+    public static string backparent(string path) => Directory.GetParent(path)?.FullName ?? path;
 }

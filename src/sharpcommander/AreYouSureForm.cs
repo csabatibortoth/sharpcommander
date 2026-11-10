@@ -1,20 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+namespace sharpcommander;
 
-namespace sharpcommander
+public partial class AreYouSureForm : Form
 {
-    public partial class AreYouSureForm : Form
+    public AreYouSureForm(string text)
     {
-        public AreYouSureForm(string text)
-        {
-            InitializeComponent();
-            label1.Text = text;
-        }
+        InitializeComponent();
+        label1.Text = text;
     }
 }

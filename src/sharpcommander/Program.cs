@@ -1,21 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Forms;
+using System.Text;
 
-namespace sharpcommander
+namespace sharpcommander;
+
+internal static class Program
 {
-    static class Program
+    /// <summary>
+    /// The main entry point for the application.
+    /// </summary>
+    [STAThread]
+    private static void Main()
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new mainForm());
-        }
+        // Legacy ANSI code pages (e.g. windows-1250) are not built into modern .NET;
+        // the text viewer needs them for files that are not UTF-8.
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
+        // Visual styles, text rendering, DPI mode and default font come from the project file.
+        ApplicationConfiguration.Initialize();
+        Application.Run(new mainForm());
     }
 }
