@@ -24,15 +24,17 @@
 
   <!-- Assembly metadata (replaces Properties\AssemblyInfo.cs). -->
   <PropertyGroup>
-    <Version>0.1.3.156</Version>
+    <Version>0.2.0.157</Version>
     <AssemblyTitle>Sharp Commander</AssemblyTitle>
     <Description>This is a freeware product</Description>
-    <Company>jamela.zxq.net</Company>
+    <Company></Company>
     <Product>Sharp Commander</Product>
-    <Copyright>Copyright © Jamela 2010</Copyright>
+    <Copyright>Copyright © Tóth Csaba 2026</Copyright>
     <NeutralLanguage>hu</NeutralLanguage>
     <!-- Keep ProductVersion a plain "a.b.c.d" (no "+<commit hash>" suffix); it is shown in the title bar. -->
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <PackageProjectUrl>https://kernelpanic.xyz/index.php/projects/sharp-commander/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/csabatibortoth/sharpcommander</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
