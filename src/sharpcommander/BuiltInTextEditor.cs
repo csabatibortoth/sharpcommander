@@ -26,6 +26,7 @@ public partial class BuiltInTextEditor : Form, ILocalizable
         richTextBox1.AcceptsTab = true;
         richTextBox1.Font = new Font("Consolas", 10F);
         richTextBox1.ModifiedChanged += (_, _) => UpdateTitle();
+        richTextBox1.TextChanged += (_, _) => UpdateTitle(); // not every kind of edit raises ModifiedChanged
         WireCommands();
         Localizer.Localize(this);
 
@@ -208,6 +209,7 @@ public partial class BuiltInTextEditor : Form, ILocalizable
         if (Clipboard.ContainsText())
         {
             richTextBox1.SelectedText = Clipboard.GetText();
+            richTextBox1.Modified = true;
         }
     }
 
