@@ -1,0 +1,15 @@
+# Build output
+bin/
+obj/
+
+# Visual Studio / Rider user state
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Legacy Visual Studio upgrade reports
+UpgradeLog*.XML
+_UpgradeReport_Files/

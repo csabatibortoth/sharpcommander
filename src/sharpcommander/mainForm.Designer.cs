@@ -74,10 +74,7 @@
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.copyBackground = new System.ComponentModel.BackgroundWorker();
-            this.moveBackground = new System.ComponentModel.BackgroundWorker();
             this.saveDownloaded = new System.Windows.Forms.SaveFileDialog();
-            this.deleteBackground = new System.ComponentModel.BackgroundWorker();
             this.topToolStrip = new System.Windows.Forms.ToolStrip();
             this.refreshToolButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
@@ -90,7 +87,6 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.contextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.compressBackground = new System.ComponentModel.BackgroundWorker();
             this.mainMenu.SuspendLayout();
             this.mainStatusStrip.SuspendLayout();
             this.mainToolStrip.SuspendLayout();
@@ -128,7 +124,6 @@
             // 
             // newToolStripMenuItem
             // 
-            this.newToolStripMenuItem.Enabled = false;
             this.newToolStripMenuItem.Image = global::sharpcommander.Properties.Resources.add_file;
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
@@ -138,7 +133,6 @@
             // 
             // openToolStripMenuItem
             // 
-            this.openToolStripMenuItem.Enabled = false;
             this.openToolStripMenuItem.Image = global::sharpcommander.Properties.Resources.open;
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
@@ -185,7 +179,6 @@
             this.pasteToolStripMenuItem,
             this.toolStripSeparator4,
             this.selectAllToolStripMenuItem});
-            this.editToolStripMenuItem.Enabled = false;
             this.editToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.editToolStripMenuItem.Image = global::sharpcommander.Properties.Resources.edit2;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
@@ -487,33 +480,9 @@
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             this.toolStripSeparator7.Size = new System.Drawing.Size(6, 25);
             // 
-            // copyBackground
-            // 
-            this.copyBackground.WorkerReportsProgress = true;
-            this.copyBackground.WorkerSupportsCancellation = true;
-            this.copyBackground.DoWork += new System.ComponentModel.DoWorkEventHandler(this.copyBackground_DoWork);
-            this.copyBackground.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.copyBackground_ProgressChanged);
-            this.copyBackground.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.copyBackground_RunWorkerCompleted);
-            // 
-            // moveBackground
-            // 
-            this.moveBackground.WorkerReportsProgress = true;
-            this.moveBackground.WorkerSupportsCancellation = true;
-            this.moveBackground.DoWork += new System.ComponentModel.DoWorkEventHandler(this.moveBackground_DoWork);
-            this.moveBackground.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.moveBackground_ProgressChanged);
-            this.moveBackground.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.moveBackground_RunWorkerCompleted);
-            // 
             // saveDownloaded
             // 
             this.saveDownloaded.Filter = "ZIP fájlok |*.zip";
-            // 
-            // deleteBackground
-            // 
-            this.deleteBackground.WorkerReportsProgress = true;
-            this.deleteBackground.WorkerSupportsCancellation = true;
-            this.deleteBackground.DoWork += new System.ComponentModel.DoWorkEventHandler(this.deleteBackground_DoWork);
-            this.deleteBackground.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.deleteBackground_ProgressChanged);
-            this.deleteBackground.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.deleteBackground_RunWorkerCompleted);
             // 
             // topToolStrip
             // 
@@ -636,14 +605,6 @@
             this.contextMenuStrip.Name = "contextMenuStrip";
             this.contextMenuStrip.Size = new System.Drawing.Size(61, 4);
             // 
-            // compressBackground
-            // 
-            this.compressBackground.WorkerReportsProgress = true;
-            this.compressBackground.WorkerSupportsCancellation = true;
-            this.compressBackground.DoWork += new System.ComponentModel.DoWorkEventHandler(this.compressBackground_DoWork);
-            this.compressBackground.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.compressBackground_ProgressChanged);
-            this.compressBackground.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.compressBackground_RunWorkerCompleted);
-            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -712,8 +673,6 @@
         private System.Windows.Forms.ToolStripButton cutToolStripButton;
         private System.Windows.Forms.ToolStripButton toolStripRenameButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-        private System.ComponentModel.BackgroundWorker copyBackground;
-        private System.ComponentModel.BackgroundWorker moveBackground;
         private System.Windows.Forms.SaveFileDialog saveDownloaded;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
         private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
@@ -724,7 +683,6 @@
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.ComponentModel.BackgroundWorker deleteBackground;
         private System.Windows.Forms.ToolStrip topToolStrip;
         private System.Windows.Forms.ToolStripButton refreshToolButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
@@ -735,7 +693,6 @@
         private System.Windows.Forms.ToolStripButton newftpToolButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
-        private System.ComponentModel.BackgroundWorker compressBackground;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         

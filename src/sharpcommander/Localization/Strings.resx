@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Hungarian (neutral) UI strings. Every other language lives in Strings.<culture>.resx with the same keys.
+
+  Key conventions:
+    <FormClass>.<componentName>          Text of a control / menu item / toolbar button of that form
+    <FormClass>.<componentName>.ToolTip  its tooltip
+    <FormClass>.$this                    the form caption
+    Common.<componentName>               fallback used by every form that has a component with that name
+    anything else                        strings used from code (see Strings.cs)
+-->
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader>
+
+  <!-- Shared menu items and buttons -->
+  <data name="Common.fileToolStripMenuItem" xml:space="preserve"><value>&amp;Fájl</value></data>
+  <data name="Common.newToolStripMenuItem" xml:space="preserve"><value>Ú&amp;j</value></data>
+  <data name="Common.openToolStripMenuItem" xml:space="preserve"><value>&amp;Megnyitás</value></data>
+  <data name="Common.saveToolStripMenuItem" xml:space="preserve"><value>Menté&amp;s</value></data>
+  <data name="Common.saveAsToolStripMenuItem" xml:space="preserve"><value>Mentés más&amp;ként</value></data>
+  <data name="Common.printToolStripMenuItem" xml:space="preserve"><value>&amp;Nyomtatás</value></data>
+  <data name="Common.printPreviewToolStripMenuItem" xml:space="preserve"><value>Nyomtatási ké&amp;p</value></data>
+  <data name="Common.exitToolStripMenuItem" xml:space="preserve"><value>&amp;Kilépés</value></data>
+  <data name="Common.editToolStripMenuItem" xml:space="preserve"><value>&amp;Szerkesztés</value></data>
+  <data name="Common.undoToolStripMenuItem" xml:space="preserve"><value>&amp;Visszavonás</value></data>
+  <data name="Common.redoToolStripMenuItem" xml:space="preserve"><value>&amp;Mégis</value></data>
+  <data name="Common.cutToolStripMenuItem" xml:space="preserve"><value>&amp;Kivágás</value></data>
+  <data name="Common.copyToolStripMenuItem" xml:space="preserve"><value>Má&amp;solás</value></data>
+  <data name="Common.pasteToolStripMenuItem" xml:space="preserve"><value>&amp;Beillesztés</value></data>
+  <data name="Common.selectAllToolStripMenuItem" xml:space="preserve"><value>Az összes kij&amp;elölése</value></data>
+  <data name="Common.toolsToolStripMenuItem" xml:space="preserve"><value>Esz&amp;közök</value></data>
+  <data name="Common.customizeToolStripMenuItem" xml:space="preserve"><value>&amp;Testreszabás</value></data>
+  <data name="Common.optionsToolStripMenuItem" xml:space="preserve"><value>&amp;Beállítások</value></data>
+  <data name="Common.helpToolStripMenuItem" xml:space="preserve"><value>Se&amp;gítség</value></data>
+  <data name="Common.contentsToolStripMenuItem" xml:space="preserve"><value>&amp;Tartalom</value></data>
+  <data name="Common.indexToolStripMenuItem" xml:space="preserve"><value>Tárgy&amp;mutató</value></data>
+  <data name="Common.searchToolStripMenuItem" xml:space="preserve"><value>&amp;Keresés</value></data>
+  <data name="Common.aboutToolStripMenuItem" xml:space="preserve"><value>Név&amp;jegy...</value></data>
+  <data name="Common.cancelBtn" xml:space="preserve"><value>Mégse</value></data>
+
+  <!-- mainForm -->
+  <data name="mainForm.newToolStripMenuItem" xml:space="preserve"><value>&amp;Új..</value></data>
+  <data name="mainForm.updateToolStripMenuItem" xml:space="preserve"><value>&amp;Frissítés</value></data>
+  <data name="mainForm.languageToolStripMenuItem" xml:space="preserve"><value>&amp;Nyelv</value></data>
+  <data name="mainForm.systemLanguageToolStripMenuItem" xml:space="preserve"><value>Rendszer alapértelmezett</value></data>
+  <data name="mainForm.toolStripStatusLabel1" xml:space="preserve"><value>Folyamat: </value></data>
+  <data name="mainForm.newToolStripButton" xml:space="preserve"><value>Új &amp;Könyvtár</value></data>
+  <data name="mainForm.saveToolStripButton" xml:space="preserve"><value>&amp;Másolás</value></data>
+  <data name="mainForm.cutToolStripButton" xml:space="preserve"><value>Át&amp;helyezés</value></data>
+  <data name="mainForm.toolStripDeleteButton" xml:space="preserve"><value>&amp;Törlés</value></data>
+  <data name="mainForm.toolStripRenameButton" xml:space="preserve"><value>Át&amp;nevezés</value></data>
+  <data name="mainForm.toolStripEditButton" xml:space="preserve"><value>Sz&amp;erkesztés</value></data>
+  <data name="mainForm.searhToolStripButton" xml:space="preserve"><value>Keresés</value></data>
+  <data name="mainForm.toolStripLabel3" xml:space="preserve"><value>Keresendő:</value></data>
+  <data name="mainForm.refreshToolButton" xml:space="preserve"><value>Frissítés</value></data>
+  <data name="mainForm.refreshToolButton.ToolTip" xml:space="preserve"><value>Ablakok frissítése</value></data>
+  <data name="mainForm.compressToolButton" xml:space="preserve"><value>Tömörítés</value></data>
+  <data name="mainForm.compressToolButton.ToolTip" xml:space="preserve"><value>Kijelöltek tömörítése</value></data>
+  <data name="mainForm.decompressToolButton" xml:space="preserve"><value>Kitömörítés</value></data>
+  <data name="mainForm.decompressToolButton.ToolTip" xml:space="preserve"><value>Kijelöltek kitömörítése</value></data>
+  <data name="mainForm.ftpToolButton.ToolTip" xml:space="preserve"><value>Kapcsolódás FTP szerverhez / kapcsolat bontása</value></data>
+  <data name="mainForm.newftpToolButton" xml:space="preserve"><value>Új FTP Kapcsolat létrehozása</value></data>
+
+  <!-- FileHandlerForm -->
+  <data name="FileHandlerForm.label1" xml:space="preserve"><value>Meghajtó jele:</value></data>
+  <data name="FileHandlerForm.nameCol" xml:space="preserve"><value>Név:</value></data>
+  <data name="FileHandlerForm.extensionCol" xml:space="preserve"><value>Kiterjesztés:</value></data>
+  <data name="FileHandlerForm.sizeCol" xml:space="preserve"><value>Méret: (Kb)</value></data>
+  <data name="FileHandlerForm.dateCol" xml:space="preserve"><value>Dátum:</value></data>
+  <data name="FileHandlerForm.fullPath" xml:space="preserve"><value>Teljes elérési út:</value></data>
+
+  <!-- BuiltInTextEditor -->
+  <data name="BuiltInTextEditor.newToolStripButton" xml:space="preserve"><value>Ú&amp;j</value></data>
+  <data name="BuiltInTextEditor.openToolStripButton" xml:space="preserve"><value>&amp;Megnyitás</value></data>
+  <data name="BuiltInTextEditor.saveToolStripButton" xml:space="preserve"><value>Menté&amp;s</value></data>
+  <data name="BuiltInTextEditor.printToolStripButton" xml:space="preserve"><value>&amp;Nyomtatás</value></data>
+  <data name="BuiltInTextEditor.cutToolStripButton" xml:space="preserve"><value>&amp;Kivágás</value></data>
+  <data name="BuiltInTextEditor.copyToolStripButton" xml:space="preserve"><value>Má&amp;solás</value></data>
+  <data name="BuiltInTextEditor.pasteToolStripButton" xml:space="preserve"><value>&amp;Beillesztés</value></data>
+  <data name="BuiltInTextEditor.helpToolStripButton" xml:space="preserve"><value>Sú&amp;gó</value></data>
+
+  <!-- Dialogs -->
+  <data name="AreYouSureForm.$this" xml:space="preserve"><value>Megerősítés...</value></data>
+  <data name="AreYouSureForm.yesBtn" xml:space="preserve"><value>Igen</value></data>
+  <data name="AreYouSureForm.noBtn" xml:space="preserve"><value>Nem</value></data>
+  <data name="AreYouSureForm.button1" xml:space="preserve"><value>Mind</value></data>
+  <data name="NewFolderDialog.$this" xml:space="preserve"><value>Új Mappa létrehozása...</value></data>
+  <data name="NewFolderDialog.label1" xml:space="preserve"><value>Mappa neve:</value></data>
+  <data name="PathVerifyForm.resourceLBL" xml:space="preserve"><value>Forrás:</value></data>
+  <data name="PathVerifyForm.targetLBL" xml:space="preserve"><value>Cél:</value></data>
+  <data name="ProcessForm.label1" xml:space="preserve"><value>Feladat:</value></data>
+  <data name="ProcessForm.label2" xml:space="preserve"><value>Teljes Folyamat:</value></data>
+
+  <!-- Strings used from code (Strings.cs) -->
+  <data name="Msg.ConfirmOverwriteItem" xml:space="preserve"><value>Biztos, hogy felülírja a {0}?</value></data>
+  <data name="Msg.ConfirmDelete" xml:space="preserve"><value>Biztos, hogy törli kijelölt elemeket?</value></data>
+  <data name="Msg.NothingSelected" xml:space="preserve"><value>Még nem választott ki elemet!</value></data>
+  <data name="Msg.DownloadFinished" xml:space="preserve"><value>Letöltés befejezve! Manuális telepítés!</value></data>
+  <data name="Msg.SearchPrompt" xml:space="preserve"><value>Mit akarsz keresni?</value></data>
+  <data name="Msg.UpToDate" xml:space="preserve"><value>Legújabb verziót használja</value></data>
+  <data name="Msg.UpdateCheckFailed" xml:space="preserve"><value>Nem sikerült ellenőrizni a frissítést!</value></data>
+  <data name="Msg.AccessDenied" xml:space="preserve"><value>Nincs megfelelő joga a mappa megnyitásához!</value></data>
+  <data name="Msg.ZipFilter" xml:space="preserve"><value>ZIP fájlok |*.zip</value></data>
+  <data name="Msg.CopyFinished" xml:space="preserve"><value>Másolás befejezve!</value></data>
+  <data name="Msg.MoveFinished" xml:space="preserve"><value>Áthelyezés befejezve!</value></data>
+  <data name="Msg.DeleteFinished" xml:space="preserve"><value>Törlés befejezve!</value></data>
+  <data name="Msg.CompressFinished" xml:space="preserve"><value>Tömörítés befejezve!</value></data>
+  <data name="Status.Copying" xml:space="preserve"><value>Másolás...</value></data>
+  <data name="Status.Moving" xml:space="preserve"><value>Áthelyezés...</value></data>
+  <data name="Status.Deleting" xml:space="preserve"><value>Törlés...</value></data>
+  <data name="Status.Compressing" xml:space="preserve"><value>Tömörítés...</value></data>
+  <data name="About.Title" xml:space="preserve"><value>{0} névjegye</value></data>
+  <data name="About.Version" xml:space="preserve"><value>Verzió: {0}</value></data>
+  <data name="Editor.Title" xml:space="preserve"><value>{0} - Sharp Editor</value></data>
+  <data name="Editor.Untitled" xml:space="preserve"><value>Névtelen</value></data>
+  <data name="Editor.SaveChanges" xml:space="preserve"><value>Menti a(z) {0} módosításait?</value></data>
+  <data name="Editor.Filter" xml:space="preserve"><value>Szöveges fájlok|*.txt|Minden fájl|*.*</value></data>
+  <data name="Status.Scanning" xml:space="preserve"><value>Elemek számbavétele...</value></data>
+  <data name="Status.Extracting" xml:space="preserve"><value>Kitömörítés...</value></data>
+  <data name="Status.Searching" xml:space="preserve"><value>Keresés...</value></data>
+  <data name="Status.Connecting" xml:space="preserve"><value>Kapcsolódás: {0}...</value></data>
+  <data name="Msg.ExtractFinished" xml:space="preserve"><value>Kitömörítés befejezve!</value></data>
+  <data name="Msg.SameSourceAndTarget" xml:space="preserve"><value>A forrás és a cél megegyezik: {0}</value></data>
+  <data name="Msg.UnsupportedArchive" xml:space="preserve"><value>Nem támogatott archívum: {0} (csak .zip és .gz)</value></data>
+  <data name="Msg.UnsafeArchiveEntry" xml:space="preserve"><value>Az archívum nem biztonságos bejegyzést tartalmaz: {0}</value></data>
+  <data name="Msg.AlreadyExists" xml:space="preserve"><value>Már létezik ilyen nevű elem: {0}</value></data>
+  <data name="Msg.RenameSingleItem" xml:space="preserve"><value>Átnevezéshez pontosan egy elemet válasszon ki!</value></data>
+  <data name="Msg.SearchPatternRequired" xml:space="preserve"><value>Írja be, mit keres!</value></data>
+  <data name="Msg.NoSearchResults" xml:space="preserve"><value>Nincs találat erre: {0}</value></data>
+  <data name="Msg.ClipboardLocalOnly" xml:space="preserve"><value>Vágólapra csak helyi fájlok másolhatók!</value></data>
+  <data name="Rename.Title" xml:space="preserve"><value>Átnevezés...</value></data>
+  <data name="Rename.Prompt" xml:space="preserve"><value>Új név:</value></data>
+
+  <!-- FTP -->
+  <data name="mainForm.toolStripButton1" xml:space="preserve"><value>Saját mappa</value></data>
+  <data name="mainForm.toolStripButton2" xml:space="preserve"><value>Dokumentumok</value></data>
+  <data name="FtpConnectDialog.$this" xml:space="preserve"><value>FTP kapcsolat</value></data>
+  <data name="FtpConnectDialog.savedLbl" xml:space="preserve"><value>Mentett kapcsolat:</value></data>
+  <data name="FtpConnectDialog.hostLbl" xml:space="preserve"><value>Kiszolgáló:</value></data>
+  <data name="FtpConnectDialog.userLbl" xml:space="preserve"><value>Felhasználónév:</value></data>
+  <data name="FtpConnectDialog.passwordLbl" xml:space="preserve"><value>Jelszó:</value></data>
+  <data name="FtpConnectDialog.securityLbl" xml:space="preserve"><value>Titkosítás:</value></data>
+  <data name="FtpConnectDialog.saveCheck" xml:space="preserve"><value>Kapcsolat mentése (jelszó nélkül)</value></data>
+  <data name="FtpConnectDialog.connectBtn" xml:space="preserve"><value>Kapcsolódás</value></data>
+  <data name="Ftp.SecurityAuto" xml:space="preserve"><value>Automatikus (TLS, ha elérhető)</value></data>
+  <data name="Ftp.SecurityNone" xml:space="preserve"><value>Nincs (sima FTP)</value></data>
+  <data name="Ftp.SecurityExplicit" xml:space="preserve"><value>Explicit TLS (FTPS)</value></data>
+  <data name="Ftp.SecurityImplicit" xml:space="preserve"><value>Implicit TLS (FTPS)</value></data>
+  <data name="Ftp.HostRequired" xml:space="preserve"><value>Adja meg a kiszolgáló címét!</value></data>
+  <data name="Ftp.UntrustedCertificate" xml:space="preserve"><value>A kiszolgáló tanúsítványa nem ellenőrizhető:
+{0}
+
+Mégis megbízik benne?</value></data>
+</root>
